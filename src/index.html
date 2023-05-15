@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <br>
-    <textarea id="cadena" cols="30" rows="10">
-      </textarea></br>
-      <p><input type="button" value="Cifrar" onclick="cifrar()">
-         <input type="button" value="Descifrar" onclick="descifrar()"></p>
-
-        <div id="resultado">
-
+    <div id="container">
+      <h1>TE ESCUCHO!</h1>
+      <img src="img/ilustracion-mujeres-chismosas_23-2147500414.avif" alt="" id="mujer">
+      <div id="app-container">
+        <textarea name="texto" id="text">Ingrese texto aquí</textarea>
+        <div id="button-container">
+          <button id="cifrar">Cifrar</button>
+          <input id="key" type="text" placeholder="key">
+          <button id="descifrar">Descifrar</button>
         </div>
+      </div>
+    </div>
+    
     
     <script src="index.js" type="module"></script>
   </body>
