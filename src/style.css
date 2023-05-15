@@ -4,7 +4,7 @@ body {
     background: pink;
 }
 
-#container {
+.container {
   position: absolute;
     width: 100vw;
     height: 100vh;
@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-.container img {
+#container img {
     position: center;
     width: 50%;
     height: 50%;
