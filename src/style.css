@@ -13,13 +13,6 @@ body {
     flex-direction: column;
 }
 
-#container img {
-    position: center;
-    width: 50%;
-    height: 50%;
-    top: 15%;
-}
-
 #container h1 {
     text-align: center;
 }
