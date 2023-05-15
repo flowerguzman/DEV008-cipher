@@ -4,15 +4,15 @@ const cipher = {
 
 export default cipher;
 
-const btnCifrar = document.querySelector ('#cifrar');
-const btnDescifrar = document.querySelector ('#descifrar');
+const btnEncrypt = document.querySelector ('#encrypt');
+const btnDecrypt = document.querySelector ('#decrypt');
 const key = document.querySelector ('#key');
 
 const listLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 
 let newText = '';
 
-btnCifrar.addEventListener ('click' , () => {
+btnEncrypt.addEventListener ('click' , () => {
   const textarea = document.querySelector ('#text');
   const keyValue = Number (key.value);
   for (let letter of textarea.value){
@@ -29,13 +29,13 @@ btnCifrar.addEventListener ('click' , () => {
     }
 
     newText += listLetters[indexNewLetter]
-    textarea.value = newText
+    textarea.value = newText;
   }
 
   newText = '';
 });
 
-btnDescifrar.addEventListener ('click' , () => {
+btnDecrypt.addEventListener ('click' , () => {
   const textarea = document.querySelector ('#text');
   const keyValue = Number (key.value);
   for (const letter of textarea.value){
@@ -56,7 +56,6 @@ btnDescifrar.addEventListener ('click' , () => {
 
   newText = '';
 });
-
 
 
  

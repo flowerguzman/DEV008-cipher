@@ -1,46 +1,79 @@
 
 body {
     margin: 0;
-    background: pink;
+  background: pink;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container {
-  position: absolute;
+#container {
+  position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+  margin:0.5%;
 }
 
 #container h1 {
     text-align: center;
 }
 
-#app-container {
+#app-container  {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #app-container textarea {
     height: 200px;
     width: 500px;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium';
+  line-height: 150%;
+  color: gray;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+#text {
+  border-radius: 50px;
+}
+
 
 #buttons-container {
     margin-top: 50px;
     display: flex;
     width: 200%;
     justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif';
 }
 
-#buttons-container input {
-    width: 50px;
-    margin: 0 15px 0 15px;
+#encrypt  {
+    width: 65px;
+    height: 65px;
+  font-family:'Franklin Gothic Medium';
+  border-radius: 35px;
+    padding:1%;
+  background:#929090;
 }
 
+#decrypt  {
+    width: 65px;
+    height: 65px;
+    margin: 0 10px 0 10px;
+  font-family:'Franklin Gothic Medium';
+  border-radius: 35px;
+  padding:1%;
+  background:#929090;
+  top:65%;
+}
 
+#key {
+  width: 35px;
+    height: 35px;
+    margin: 0 10px 0 10px;
+  font-family:'Franklin Gothic Medium';
+  border-radius: 5px;
+  text-align: center;
+}
