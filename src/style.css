@@ -5,12 +5,19 @@ body {
 }
 
 #container {
-  position: relative;
+  position: absolute;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.container img {
+    position: center;
+    width: 50%;
+    height: 50%;
+    top: 15%;
 }
 
 #container h1 {
@@ -42,3 +49,5 @@ body {
     width: 50px;
     margin: 0 15px 0 15px;
 }
+
+
